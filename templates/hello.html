@@ -6,7 +6,11 @@
 </head>
 <body>
 
-  <h3>Hello User...</h3>
+    {% if name == 'admin' %}
+        <p>Sorry...</p>
+    {% else %}
+        <h3>Hello {{ name|upper }}...</h3>
+    {% endif %}
 
 </body>
 </html>
